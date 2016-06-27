@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="Amex" groupId="com.example.SimpleProxyConfig.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/Amex.xml</file>
+    </artifact>
+    <artifact name="SimplePassThrough" groupId="com.example.SimpleProxyConfig.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/SimplePassThrough.xml</file>
+    </artifact>
+    <artifact name="testSequence" groupId="com.example.SimpleProxyConfig.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/testSequence.xml</file>
+    </artifact>
+</artifacts>

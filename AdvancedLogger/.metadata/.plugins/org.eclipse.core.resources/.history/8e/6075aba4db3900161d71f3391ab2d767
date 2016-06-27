@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="advancedLogSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+  <property expression="$url:user" name="userName" scope="default" type="STRING"/>
+  <log>
+    <property name="SimpleValueParameter" value="Testing Remote Server Deployment"/>
+    <property expression="$ctx:userName" name="LoggedInUser"/>
+  </log>
+  <payloadFactory media-type="json">
+    <format>
+			{
+				"user":"$1"
+			}
+		</format>
+    <args>
+      <arg evaluator="xml" expression="$ctx:userName"/>
+    </args>
+  </payloadFactory>
+  <respond/>
+</sequence>

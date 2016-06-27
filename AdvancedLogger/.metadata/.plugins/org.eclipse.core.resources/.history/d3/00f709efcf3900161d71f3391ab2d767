@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="advancedLogSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+
+	<property name="userName" expression="$url:user" />
+	<log>
+		<property name="SimpleValueParameter" value="Testing Remote Server Deployment" />
+		<property name="LoggedInUser" expression="$ctx:userName" />
+	</log>
+	
+	<payloadFactory>
+	</payloadFactory>
+</sequence>
